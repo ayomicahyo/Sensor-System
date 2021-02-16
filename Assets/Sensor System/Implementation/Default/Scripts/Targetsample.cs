@@ -7,12 +7,16 @@ namespace SensorSystem.Default
     public class Targetsample : MonoBehaviour, ITarget
     {
         public float health = 100;
+        public string nameTarget = string.Empty;
+        public float baseDamage = 100;
+
+        public targetData data = default;
 
         [SerializeField]
         private string id = string.Empty;
 
         [SerializeField]
-        private string tag = string.Empty;
+        private new string tag = string.Empty;
 
         public string ID
         {
@@ -32,11 +36,36 @@ namespace SensorSystem.Default
             set { }
         }
 
+        public targetData Data
+        {
+            get 
+            {
+                return data;
+            }
+        }
+
+        void Awake()
+        {
+            data.name = nameTarget;
+            data.baseDamage = baseDamage;
+            data.tag = tag;
+        }
+
+
         // Update is called once per frame
         void Update()
         {
 
         }
+
+        public void DataSend(targetData data)
+        {
+            Debug.Log(data.name);
+            Debug.Log(data.baseDamage);
+            Debug.Log("DataPas");
+        }
+
+
     }
 
 }

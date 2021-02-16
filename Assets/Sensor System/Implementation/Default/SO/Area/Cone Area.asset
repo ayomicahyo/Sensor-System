@@ -9,14 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546a136f63484b54485ca85219e32062, type: 3}
-  m_Name: Box Area
+  m_Script: {fileID: 11500000, guid: 2c04a3df9fad894409dc643698f5697e, type: 3}
+  m_Name: Cone Area
   m_EditorClassIdentifier: 
-  size: {x: 5, y: 5, z: 5}
-  sizeColor: {r: 0, g: 1, b: 0, a: 1}
   obstacleMask:
     serializedVersion: 2
     m_Bits: 0
+  meshResolution: 0
+  viewAngle: 97
   targetInRadius: []
-  meshResolution: 0.06
-  viewAngle: 85
+  radius: 1
+  high: 1.73
+  radiusColor: {r: 0.7735849, g: 0.036360554, b: 0, a: 1}
+  lines: 19

@@ -2,6 +2,12 @@ namespace SensorSystem
 {
     public interface ITarget
     {
+
+        targetData Data
+        {
+            get;
+        }
+
         string ID
         {
             get;
@@ -11,5 +17,7 @@ namespace SensorSystem
         {
             get;
         }
+
+        void DataSend(targetData data);
     }
 }

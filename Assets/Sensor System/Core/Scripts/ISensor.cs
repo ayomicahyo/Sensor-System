@@ -23,5 +23,7 @@ namespace SensorSystem
         }
 
         void Filtering();
+
+        void Callback(ITarget target);
     }
 }

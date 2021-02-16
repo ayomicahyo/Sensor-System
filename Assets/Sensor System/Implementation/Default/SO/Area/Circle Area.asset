@@ -17,4 +17,6 @@ MonoBehaviour:
     m_Bits: 0
   radius: 3
   radiusColor: {r: 0, g: 0, b: 1, a: 1}
-  targetInArea: 0
+  meshResolution: 0.12
+  viewAngle: 93
+  targetInRadius: []
